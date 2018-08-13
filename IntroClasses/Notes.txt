@@ -1,0 +1,9 @@
+
+Classes -> blueprints/building blocks of objects. A map or model of the "real" thing (though more abstract in computing than in the physical world...)
+The classes - as for objects in the real/physical world - need to have properties (descriptive elements)!!
+
+Public/private access modes;
+Public - anyone has access
+Private - only access within the same class (self-contained)
+
+Constructor - piece of code that sets the values of the instance variables (this.<var-name>) to what we pass as arguments in the constructor :)
