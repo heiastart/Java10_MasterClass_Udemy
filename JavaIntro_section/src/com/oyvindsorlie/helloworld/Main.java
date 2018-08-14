@@ -4,6 +4,31 @@ public class Main {
 
     public static void main(String[] args){
 
+        // Addition from Java Class library -> lecture 53
+        // StringBuilder class
+
+        StringBuilder stringBuilder = new StringBuilder();
+
+        stringBuilder.append("hello folkens...");
+        stringBuilder.append('C');
+        stringBuilder.delete(5, 8);
+
+        System.out.println(stringBuilder + " length: " + stringBuilder.length());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
         //String - collection of characters, words or sentences.
         String myName = "Øyvind";
         String mySister = "Anne";
@@ -37,5 +62,6 @@ public class Main {
 
 
         System.out.println(myName + " " + mySister);
+        */
     }
 }
