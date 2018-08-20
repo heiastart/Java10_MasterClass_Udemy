@@ -12,9 +12,7 @@ public class Main {
         basketball.setColor("orange");
         basketball.setTypeName("Basketball");
         basketball.isNBA = true;
-        System.out.println(basketball.isNBA());
 
-        basketball.bounce();
 
     }
 }
