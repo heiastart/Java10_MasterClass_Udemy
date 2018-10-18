@@ -101,7 +101,7 @@ public class FlashCardBuilder {
 
             while (cardIterator.hasNext()){
                 FlashCard card = (FlashCard) cardIterator.next();       // Can drop the (FlashCard)-parser...put in to be 100% sure that deal with/receiving a FlashCard object here!
-                writer.write(card.getQuestion() + "-");           // Calling the getter-method getQuestion() from the FlashCard class
+                writer.write(card.getQuestion() + "/");           // Calling the getter-method getQuestion() from the FlashCard class
                 writer.write(card.getAnswer() + "\n");              // Calling the getter-method getAnswer() from the FlashCard class
 
                 /*
