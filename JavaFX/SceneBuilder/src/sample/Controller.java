@@ -1,5 +1,7 @@
 package sample;
 
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -25,17 +27,21 @@ public class Controller implements Initializable {
     private Label labelId;
 
     @FXML
-    private CheckBox myCheckBox;
+    private JFXButton materialButton;
+
+    @FXML
+    private JFXTextField textField;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        clickMeButton.setOnAction(new EventHandler<ActionEvent>() {
+        materialButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello app!!");
-                labelId.setText("Du trykket på knappen...bra jobba!");
-                myCheckBox.fire();
+                String textString = textField.getText().trim();
+
+                //System.out.println("Hello app!!");
+                labelId.setText(textString);
             }
         });
 
